@@ -1,13 +1,13 @@
-function setup(){
-    createCanvas(200, 200);
-    loadJSON("http://127.0.0.1:8080/books", gotData);
-    
+async function getData(){
+    const api_url = "https://api.wheretheiss.at/v1/satellites/25544"
+    const response = await fetch(api_url);
+    const data = await response.json();
+
+    const {latitude, longitude} = data;
+    document.getElementById('lat').textContent = latitude;
+    document.getElementById('lon').textContent = longitude;
+    console.log(data);
+
 }
 
-function gotData(data){
-    println(data);
-}
-
-function draw(){
-    background(0);
-}
+getData();
