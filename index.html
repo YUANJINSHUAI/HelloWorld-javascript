@@ -2,17 +2,314 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body>
-    <h1>Hello World</h1>
-    <script src="index.js"></script>
+    <body>  
+        <!-- add internal links of tab -->
+        <nav class="sidebar">
+            <!-- <img src="https://tva1.sinaimg.cn/large/008eGmZEly1gnch2z6fc2j30ey0ekac2.jpg" alt="logo"> -->
+            <!-- make a table for many tabs -->
+            <div class="text">Side Menu</div>
+            <ul>
+                
+                <li>
+                    <a href="#" class="top-btn">top
+                        <span class="fa fa-caret-down first"></span>
+                    </a>
+                </li>
 
-    <p>
-        latitude: <span id = "lat"></span> </bar>
-        longtitude: <span id = "lon"></span> </bar>
-    </p>
-    <script src="sketch.js"></script>
-</body>
+                <li>
+                    <a href="#news" class="news-btn">news
+                        <span class="fas fa-caret-down second"></span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="#awards" class="awards-btn">awards
+                        <span class="fas fa-caret-down"></span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#schedule" class="schedule-btn">schedule
+                        <span class="fas fa-caret-down"></span>
+                    </a>
+                </li>
+                
+
+                <li>
+                    <a href="#contact" class="contact-btn">contact
+                        <span class="fas fa-caret-down"></span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <script>
+            $('.top-btn').click(function(){
+                $('nav ul .top-show').toggleClass("show");
+                $('nav ul .first').toggleClass("rotate");
+            });
+            console.log(3/2);
+        </script>
+
+        <div id="content">
+            <div class="big-title">
+                <h1>LeBron James Fancy Website</h1>
+                <!-- <img src="https://tva1.sinaimg.cn/large/008eGmZEgy1gng0lc4e0yj31bf0u0ajo.jpg" alt="news backgorund"> -->
+            </div>
+
+            <div class="intro-content content-oddNumber">
+                <h1 id="intro">intro</h1>
+                <img src="https://tva1.sinaimg.cn/large/008eGmZEgy1gnga2kgzqdj30js0g0k3f.jpg" alt="lebron">
+                <p><strong style="color: black;">Lebron James</strong>, the Los Angeles Lakers superstar, has 
+                    seemed happier and looser with Davis around. 
+                    The duo have already won a championship together, 
+                    but, somehow, seem to be getting better.
+                    James, the Los Angeles Lakers superstar, has 
+                    seemed happier and looser with Davis around. 
+                    The duo have already won a championship together, 
+                    but, somehow, seem to be getting better.
+                    James, the Los Angeles Lakers superstar, has 
+                    seemed happier and looser with Davis around. 
+                    The duo have already won a championship together, 
+                    but, somehow, seem to be getting better.
+                    James, the Los Angeles Lakers superstar, has 
+                    seemed happier and looser with Davis around. 
+                    The duo have already won a championship together, 
+                    but, somehow, seem to be getting better.
+                    James, the Los Angeles Lakers superstar, has 
+                    seemed happier and looser with Davis around. 
+                    The duo have already won a championship together, 
+                    but, somehow, seem to be getting better.
+                    James, the Los Angeles Lakers superstar, has 
+                    seemed happier and looser with Davis around. 
+                    The duo have already won a championship together, 
+                    but, somehow, seem to be getting better.</p>
+            </div>
+            <div class="news-content content-evenNumber">
+                <h1 id="news">news</h1>
+                <div class="news-content-detail 1">
+                    <a target="_blank" href="https://www.espn.com/nba/story/_/id/30849256/nba-power-rankings-giannis-antetokounmpo-milwaukee-bucks-figuring-things-out">NBA Power Rankings: Giannis Antetokounmpo and the Milwaukee Bucks are figuring things out
+                        <div>FROM <strong>ESPN</strong> 9 Feb</div>
+                    </a>
+                    <img src="https://tva1.sinaimg.cn/large/008eGmZEly1gnh58kexalj30lu0hiwzd.jpg" alt="news1pic">
+                </div>
+                
+                <div class="news-content-detail 2">
+                    <a target="_blank" href="https://www.espn.com/nba/story/_/id/30849256/nba-power-rankings-giannis-antetokounmpo-milwaukee-bucks-figuring-things-out">NBA Power Rankings: Giannis Antetokounmpo and the Milwaukee Bucks are figuring things out
+                        <div>FROM <strong>ESPN</strong> 9 Feb</div>
+                    </a>
+                    <img src="https://tva1.sinaimg.cn/large/008eGmZEly1gnh58kexalj30lu0hiwzd.jpg" alt="news1pic">
+                </div>
+                
+                <div class="news-content-detail 3">
+                    <a target="_blank" href="https://www.espn.com/nba/story/_/id/30849256/nba-power-rankings-giannis-antetokounmpo-milwaukee-bucks-figuring-things-out">NBA Power Rankings: Giannis Antetokounmpo and the Milwaukee Bucks are figuring things out
+                        <div>FROM <strong>ESPN</strong> 9 Feb</div>
+                    </a>
+                    <img src="https://tva1.sinaimg.cn/large/008eGmZEly1gnh58kexalj30lu0hiwzd.jpg" alt="news1pic">
+                </div>
+                
+                <div class="news-content-detail 4">
+                    <a target="_blank" href="https://www.espn.com/nba/story/_/id/30849256/nba-power-rankings-giannis-antetokounmpo-milwaukee-bucks-figuring-things-out">NBA Power Rankings: Giannis Antetokounmpo and the Milwaukee Bucks are figuring things out
+                        <div>FROM <strong>ESPN</strong> 9 Feb</div>
+                    </a>
+                    <img src="https://tva1.sinaimg.cn/large/008eGmZEly1gnh58kexalj30lu0hiwzd.jpg" alt="news1pic">
+                </div>
+                
+                <div class="news-content-detail 5">
+                    <a target="_blank" href="https://www.espn.com/nba/story/_/id/30849256/nba-power-rankings-giannis-antetokounmpo-milwaukee-bucks-figuring-things-out">NBA Power Rankings: Giannis Antetokounmpo and the Milwaukee Bucks are figuring things out
+                        <div>FROM <strong>ESPN</strong> 9 Feb</div>
+                    </a>
+                    <img src="https://tva1.sinaimg.cn/large/008eGmZEly1gnh58kexalj30lu0hiwzd.jpg" alt="news1pic">
+                </div>
+            </div>
+            <div class="awards-content content-oddNumber">
+                <h1 id="awards">awards</h1>
+                <!-- make a unorder list of awards -->
+                <div class="awards-content-detail 1">
+                    <div>NBA champion</div>
+                    <div class="awards-content-detail-times 1">2012, 2013, 2016, 2020</div>
+                </div>
+
+                <div class="awards-content-detail 2">
+                    <div>NBA Finals Most Valuable Player</div>
+                    <div class="awards-content-detail-times 2">2012, 2013, 2016, 2020</div>
+                </div>
+
+                <div class="awards-content-detail 3">
+                    <div>NBA Most Valuable Player</div>
+                    <div class="awards-content-detail-times 3">2009, 2010, 2012, 2013</div>
+                </div>
+
+                <div class="awards-content-detail 4">
+                    <div>NBA All-Star</div>
+                    <div class="awards-content-detail-times 4">2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020</div>
+                </div>
+
+                <div class="awards-content-detail 5">
+                    <div>NBA All-Star Game MVP</div>
+                    <div class="awards-content-detail-times 5">2006, 2008, 2018</div>
+                </div>
+
+                <div class="awards-content-detail 6">
+                    <div>First team</div>
+                    <div class="awards-content-detail-times 6">2006, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2020</div>
+                </div>
+
+                <div class="awards-content-detail 7">
+                    <div>Second team</div>
+                    <div class="awards-content-detail-times 7">2005, 2007</div>
+                </div>
+
+                <div class="awards-content-detail 8">
+                    <div>Third team</div>
+                    <div class="awards-content-detail-times 8">2019</div>
+                </div>
+
+                <div class="awards-content-detail 9">
+                    <div>NBA All-Defensive selection</div>
+                    <div class="awards-content-detail-times 9">2009, 2010, 2011, 2012, 2013</div>
+                </div>
+                <div class="awards-content-detail 10">
+                    <div>First team</div>
+                    <div class="awards-content-detail-times 10">2009, 2010, 2011, 2012, 2013</div>
+                </div>
+                <div class="awards-content-detail 11">
+                    <div>Second team</div>
+                    <div class="awards-content-detail-times 11">2014</div>
+                </div>
+                <div class="awards-content-detail 12">
+                    <div>NBA Rookie of the Year</div>
+                    <div class="awards-content-detail-times 12">2004</div>
+                </div>
+                <div class="awards-content-detail 13">
+                    <div>All-Rookie First Team</div>
+                    <div class="awards-content-detail-times 13">2004</div>
+                </div>
+                <div class="awards-content-detail 14">
+                    <div>scoring leader</div>
+                    <div class="awards-content-detail-times 14">2008</div>
+                </div>
+                <div class="awards-content-detail 15">
+                    <div>NBA assists leader</div>
+                    <div class="awards-content-detail-times 15">2020</div>
+                </div>
+                <div class="awards-content-detail 16">
+                    <div>NBA minutes leader</div>
+                    <div class="awards-content-detail-times 16">2007, 2017, 2018</div>
+                </div>
+                <div class="awards-content-detail 17">
+                    <div>J. Walter Kennedy Citizenship Award</div>
+                    <div class="awards-content-detail-times 17">2017</div>
+                </div>
+            </div>
+            <div class="schedule-content content-evenNumber">
+                <h1 id="schedule">schedule</h1>
+                <!-- make schedule by table tag-->
+                <table class='schedule-table-border'>
+                      <tr>
+                          <td class='schedule-table-border-inner 1-1'>
+                            <table class="schedule-table-left 1-1">
+                                <tbody>
+                                    <tr>
+                                        <td>Timberwolves vs Lakers<br>Wed, 17 Feb 02:00</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                          </td>
+                          <td class='schedule-table-border-inner 1-2'>
+                            <table class="schedule-table-right 1-2">
+                                <tbody>
+                                    <tr>
+                                        <td>Lakers vs Nets<br>Fri, 19 Feb 04:00</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                          </td>
+                      </tr>  
+                      <tr>
+                          <td class='schedule-table-border-inner 2-1'>            
+                            <table class="schedule-table-left 2-1">
+                                <tbody>
+                                    <tr>
+                                        <td>Lakers vs Nets<br>Fri, 19 Feb 04:00</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                          </td>
+                          <td class='schedule-table-border-inner 2-2'>
+                            <table class="schedule-table-right 2-2">
+                                <tbody>
+                                    <tr>
+                                        <td>Lakers vs Nets<br>Fri, 19 Feb 04:00</td>
+                                    </tr>
+                                </tbody>
+                            </table> 
+                          </td>
+                      </tr>
+                      <tr>
+                        <td class='schedule-table-border-inner 3-1'>            
+                            <table class="schedule-table-left 3-1">
+                                <tbody>
+                                    <tr>
+                                        <td>Lakers vs Nets<br>Fri, 19 Feb 04:00</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td class='schedule-table-border-inner 3-2'>
+                            <table class="schedule-table-right 3-2">
+                                <tbody>
+                                    <tr>
+                                        <td>Lakers vs Nets<br>Fri, 19 Feb 04:00</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class='schedule-table-border-inner 4-1'>            
+                            <table class="schedule-table-left 4-1">
+                                <tbody>
+                                    <tr>
+                                        <td>Lakers vs Nets<br>Fri, 19 Feb 04:00</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td class='schedule-table-border-inner 4-2'>
+                            <table class="schedule-table-right 4-2">
+                                <tbody>
+                                    <tr>
+                                        <td>Lakers vs Nets<br>Fri, 19 Feb 04:00</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+                <div class="schedule-note">All times are in Central European Time</div>
+                    <!-- <img src="https://tva1.sinaimg.cn/large/008eGmZEgy1gngay4dia3j30k80r7hdt.jpg" alt="schedule"> -->
+            </div>
+            <!--make a footer tag to link the bottom tab-->
+            <div class="contact-content">
+                <footer id="contact">
+                    <div class="contact-info">
+                        <h1>contact me</h1>
+                        <p>email:arthuryuan15@outlook.com</p>
+                    </div>
+                </footer>
+            </div>
+
+            <div id="demo">
+                <input type="text" placeholder="Type something..." id="myInput">
+                <button type="button" onclick="getInputValue();" id="mip-sjh-submit">Get Value</button>
+                <script src="mip-yjs.js"></script>
+            </div>
+
+        </div>
+    </body>
 </html>

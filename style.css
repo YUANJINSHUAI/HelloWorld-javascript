@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* remove paddlings of all elements */
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.TABLE {
+    display: table;
+}
+
+h1 {
+    color: greenyellow;
+}
+.sidebar  {
+    font-size: smaller;
+    /* make tab-navigation always float on the screen */
+    position: fixed;
+    /* anchor it to the top and right side of page */
+    top: 1;
+    left: 1em;
+    /* add background color of tab navigation */
+    background:rgb(207, 217, 230);
+    /* make width and height */
+    width: 250px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar img {
+    width: 20%;
+    /*  nav img is displayed as a block */
+    display: block; 
+    margin-bottom: 35x;
+}
+
+.sidebar .text{
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 65px;
+    text-align: center;
+    letter-spacing: 1px;            
+}
+
+/* using nav tag instead of .sidebar at the following*/
+
+nav ul{
+    background: #1b1b1b;
+    height: 100%;
+    width: 100%;
+    /* hide dot of list */
+    list-style: none;
+}
+nav ul li{
+    line-height: 60px;
+    border-bottom: 1px solid rgb(255,255,255,0.1);
+}
+
+nav ul li .top-show.show{
+    display: block;
+}
+
+nav ul li a{
+    position: relative;
+    color: white;
+    /* remove underline of hypertext */
+    text-decoration: none;
+    font-size: 16px;
+    padding-left: 40px;
+    font-weight: 500;
+    /* The element generates a block element box, generating line breaks both before and after the element when in the normal flow. */
+    display: block;
+    width: 100%;
+    border-left: 3px solid transparent;
+
+}
+
+nav ul li a:hover{
+    color: cyan;
+    background: darkcyan;
+    border-left-color: cyan;
+}
+
+nav ul li a span{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 22px;
+    transition: transform 0.4s;
+}
+
+nav ul li a span.rotate{
+    transform: translateY(-50%) rotate(-180deg);
+
+}
+
+nav ul li ul{
+    position: static;
+    /* don't display second level navigation*/
+    display: none;
+}
+
+nav ul ul li{
+    line-height: 42px;
+    border-bottom: none;
+}
+
+nav ul li ul li a{
+    font-size: 17px;
+    padding-left: 80px;
+}
+
+#content {
+    /* add some left margin to fit tab navigation */
+    margin-left: 250px;
+    padding-left: 20px;
+    /* add some right margin to avoid incomplete text sometimes */
+    margin-right: 4em;
+    margin-top: 0px;
+
+}
+
+#content .big-title {
+    background:#d6a3a3;
+    width: 100%;
+    border: 2px dashed rgb(161, 161, 161);
+    margin: 0px 0px 0px 0px;
+    line-height: 65px;
+}
+
+#content .big-title h1{
+    font-size: 14;
+    font-family: cursive;
+    font-style: italic;
+    word-spacing: 6px;
+    text-align: center;
+    color: slategrey;
+}
+
+#content .content-oddNumber{
+    background:#ffffff;
+    padding: 100px;
+    line-height:25px;
+}
+
+#content .content-evenNumber{
+    background:#cdd3f4;
+    padding: 100px;
+    line-height:25px;
+    text-decoration: none;
+}
+
+#content .intro-content h1{
+    line-height: 55px;
+}
+
+ #content .intro-content img{
+    float: left;
+    width: 30%;
+    margin-right: 10px;
+}
+
+
+#content .news-content .news-content-detail{
+    border: 1.5px solid grey;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#content .news-content .news-content-detail a{
+    float: right;
+    text-decoration: none;
+    margin-right: 20px;
+    /* fixed content size */
+    height: 120px;
+    width: 500px;
+}
+
+#content .news-content .news-content-detail a div{
+    font-size: 15px;
+    text-align: right;
+    padding-right: 30px;
+    /* border: 1.5px solid gray; */
+    margin-top: 40px;
+}
+
+
+#content .news-content div img{
+    margin-left: 20px;
+    /* fixed width of img */
+    height: auto;
+    width: 150px;
+    /* image is a default inline element and its has some attribute. That why you get extra space. */
+    display:block;
+}
+
+#content .awards-content{
+    padding: 100px;
+    line-height:25px;
+}
+
+#content .awards-content .awards-content-detail{
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin-top: 15px;
+}
+
+/* On mouse-over, add a deeper shadow */
+#content .awards-content .awards-content-detail:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+/* Add some padding inside the card container */
+.container {
+    padding: 2px 16px;
+}
+
+#content .schedule-content{
+    padding: 100px;
+    line-height:25px;
+}
+
+.schedule-content h1{
+    line-height: 55px;
+}
+
+.schedule-content .schedule-table-border{
+    padding: 10px;
+    /* collapse the border */
+    border-collapse: collapse;
+}
+
+.schedule-content .schedule-table-border .schedule-table-border-inner{
+    padding: 20px;
+    border: 2px solid rgba(0,0,0,0.2);    
+    /* equal Height Columns */
+    width: 25%;
+    font-size: large;
+}
+
+.schedule-content .schedule-table-border .schedule-table-border-inner:hover {
+    /* box-shadow: 0 8px 16px 0 #f7f9fb; */
+    background-color: #a3abc6;
+  }
+
+
+#content .schedule-content .schedule-note{
+    font-style: italic;
+}
+
+#content .contact-content {
+    background: rgb(20, 20, 20);
+    padding: 100px;
+    text-align: right;
+    line-height:25px;
+}
+
+#content .contact-content #contact .contact-info{
+    padding-left: 300px;
+    text-align: left;
+}
+
+#content .contact-content p{
+    color: rgb(255, 255, 255);
+    line-height: 45px;
+
+}
+
